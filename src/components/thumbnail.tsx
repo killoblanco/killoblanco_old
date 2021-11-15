@@ -1,4 +1,5 @@
 import { keyframes, styled } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const bounce = keyframes({
   'from': { transform: 'translateY(-12px)' },
@@ -22,10 +23,11 @@ const Img = styled('img')(({ theme }) => ({
 }));
 
 function Thumbnail() {
+  const { t } = useTranslation();
   return (
     <Img
       src="https://avatars.githubusercontent.com/u/4205975"
-      alt="I'm Kamilo Vasquez"
+      alt={t('Jumbotron.ImgAlt')}
     />
   );
 }
