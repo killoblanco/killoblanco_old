@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import Section from '../../components/section';
+import SocialNetworks from '../../components/social-networks';
 import Thumbnail from '../../components/thumbnail';
 
 function Jumbotron() {
@@ -13,13 +14,14 @@ function Jumbotron() {
         justifyContent: 'center',
       }}
     >
-      <Typography variant="h4" align="center" sx={{ marginBottom: 4 }}>
+      <Typography variant="h4" align="center" mb={4}>
         👋🏻 Soy Kamilo Vasquez
       </Typography>
       <Thumbnail />
-      <Typography variant="h3" align="center" sx={{ marginTop: 4 }}>
+      <Typography variant="h3" align="center" mt={4}>
         Desarrollador 🦄
       </Typography>
+      <SocialNetworks />
     </Section>
   );
 }
