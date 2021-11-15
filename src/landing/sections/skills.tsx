@@ -1,16 +1,19 @@
 import { Container, Grid, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import StackIcon, { iconList } from '../../assets/stack/stack-icon';
 import Section from '../../components/section';
 import SkillCard from '../../components/skill-card';
 
 function Skills() {
+  const { t } = useTranslation();
+
   return (
     <Section gradientDir="bottom" py={4}>
       <Container fixed>
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12}>
             <Typography variant="h4" align="center">
-              Habilidades & Tecnologias
+              {t('Skills.Header')}
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
