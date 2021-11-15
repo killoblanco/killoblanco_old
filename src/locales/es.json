@@ -1,0 +1,31 @@
+{
+  "TopBar": {},
+  "Jumbotron": {
+    "Line1": "👋🏻 Soy Kamilo Vasquez",
+    "Line2": "Desarrollador 🦄",
+    "ImgAlt": "Soy Kamilo Vasquez"
+  },
+  "About": {
+    "Header": "Sobre Mí",
+    "Line1": "Hola, soy Kamilo Vasquez, desarrollador de software desde mediados de 2010. Apasionado por crear soluciones de software que tengan un impacto en la vida de las personas.",
+    "Line2": "He trabajado con equipos de todo el mundo en grandes proyectos y con diferentes roles en el desarrollo web. Además, con algunas participaciones en otras áreas de desarrollo como aplicaciones móviles, aplicaciones de escritorio y WebAssembly. Autodidacta y entusiasta de la Inteligencia Artificial."
+  },
+  "Skills": {
+    "Header": "Habilidades & Tecnologías",
+    "Card": {
+      "Header": "Desarrollador de Software",
+      "Content": "Constructor de infraestructura y aplicaciones full-stack multiplataforma con tecnologías de vanguardia."
+    }
+  },
+  "Experience": {
+    "Header": "Experiencia",
+    "Front": "Desarrollador Front-End",
+    "Back": "Desarrollador Back-End",
+    "Full": "Desarrollador Full-Stack",
+    "Month_one": "{{count}} Mes",
+    "Month_other": "{{count}} Meses",
+    "Year_one": "{{count}} Año",
+    "Year_other": "{{count}} Años"
+  },
+  "Footer": "Hecho con ❤️ & ☕ por"
+}

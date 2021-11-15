@@ -1,9 +1,10 @@
 import { AppBar, Box, IconButton, Stack, Toolbar } from '@mui/material';
+import LngMenu from './lng-menu';
 import Logo from './logo';
 
 function TopBar() {
   const goToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
   };
 
   return (
@@ -14,6 +15,7 @@ function TopBar() {
           <IconButton size="small" onClick={goToTop}>
             <Logo />
           </IconButton>
+          <LngMenu />
           {/*<Button variant="contained" disableElevation size="small">*/}
           {/*  Demos*/}
           {/*</Button>*/}

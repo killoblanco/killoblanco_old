@@ -1,8 +1,12 @@
 import { Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import Section from '../../components/section';
+import SocialNetworks from '../../components/social-networks';
 import Thumbnail from '../../components/thumbnail';
 
 function Jumbotron() {
+  const { t } = useTranslation();
+
   return (
     <Section
       sx={{
@@ -13,13 +17,14 @@ function Jumbotron() {
         justifyContent: 'center',
       }}
     >
-      <Typography variant="h4" align="center" sx={{ marginBottom: 4 }}>
-        👋🏻 Soy Kamilo Vasquez
+      <Typography variant="h4" align="center" mb={4}>
+        {t('Jumbotron.Line1')}
       </Typography>
       <Thumbnail />
-      <Typography variant="h3" align="center" sx={{ marginTop: 4 }}>
-        Desarrollador 🦄
+      <Typography variant="h3" align="center" mt={4}>
+        {t('Jumbotron.Line2')}
       </Typography>
+      <SocialNetworks />
     </Section>
   );
 }
