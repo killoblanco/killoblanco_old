@@ -1,44 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# 👋🏻 I'm Kamilo Vasquez
 
-## Available Scripts
+![Visitors]&nbsp;&nbsp;![GitHub]&nbsp;&nbsp;![LinkedIn](linkedin)&nbsp;&nbsp;![Website](website)
 
-In the project directory, you can run:
+## 🦄 Developer
 
-### `npm start`
+```javascript
+const killoblanco = {
+    pronouns: ['He', 'Him'],
+    languages: ['es-co', 'en-us'],
+    askMeAbout: [
+        'Software development',
+        'Tech',
+        'Video Games'
+    ],
+    techStack: {
+        frontEnd: [
+            'Gatsby',
+            'React',
+            'Redux',
+            'Redux-Saga',
+            'TypeScript'
+        ],
+        backEnd: [
+            'Django',
+            'NextJS',
+            'NodeJS',
+            'Python',
+        ],
+        misc: [
+            'Docker',
+            'Firebse',
+            'Google Cloud Platform',
+            'WebAssembly',
+        ],
+    },
+    currentlyWorkingAs: 'Front-End Developer'
+}
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About me
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![Visitors]&nbsp;&nbsp;![GitHub]&nbsp;&nbsp;![LinkedIn](linkedin)&nbsp;&nbsp;![Website](website)
 
-### `npm test`
+Hi, I'm Kamilo Vasquez, a software developer since mid-2010. Passionate about creating software solutions that have an impact on people's lives.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I have worked with teams from all over the world on large projects and with different roles in web development. In addition, with some participation in other areas of development such as mobile applications, desktop applications, and WebAssembly. Self-taught and enthusiastic about Artificial Intelligence.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[visitors]: https://visitor-badge.laobi.icu/badge?page_id=killoblanco
+[github]: https://img.shields.io/github/followers/killoblanco?style=social
+[linkedin]: https://img.shields.io/badge/-Kamilo_Vasquez-blue?style=plastic&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/killoblanco/
+[website]: https://img.shields.io/badge/-Website-blue?style=plastic&logo=MicrosoftEdge&color=3277BC&link=https://whois.kamilo.dev/
