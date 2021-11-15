@@ -1,7 +1,10 @@
 import { AutoAwesomeRounded } from '@mui/icons-material';
 import { alpha, Card, CardContent, CardHeader, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 function SkillCard() {
+  const { t } = useTranslation();
+
   return (
     <Card
       sx={{
@@ -13,12 +16,11 @@ function SkillCard() {
     >
       <CardHeader
         avatar={<AutoAwesomeRounded color="primary" />}
-        title="Desarrollador de Software"
+        title={t('Skills.Card.Header')}
       />
       <CardContent>
         <Typography>
-          Constructor de infraestructura y aplicaciones full-stack multiplataforma con
-          tecnologías de vanguardia.
+          {t('Skills.Card.Content')}
         </Typography>
       </CardContent>
     </Card>
