@@ -1,7 +1,7 @@
 # 👋🏻 I'm Kamilo Vasquez
 
 ![Visitors] &nbsp;&nbsp;
-![GitHub] &nbsp;&nbsp;
+[![GitHub]](https://github.com/killoblanco?tab=followers) &nbsp;&nbsp;
 [![LinkedIn]](https://www.linkedin.com/in/killoblanco/) &nbsp;&nbsp;
 [![Website]](https://whois.kamilo.dev/)
 
