@@ -1,7 +1,10 @@
 import { Container, Grid, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import Section from '../../components/section';
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <Section
       id="about"
@@ -12,21 +15,17 @@ function About() {
         <Grid container spacing={4} direction="column">
           <Grid item xs={12} md={8}>
             <Typography variant="h4" align="center">
-              Acerca de Mi
+              {t('About.Header')}
             </Typography>
           </Grid>
           <Grid item xs={12} md={8}>
             <Typography>
-              Hola, soy Kamilo Vasquez, desarrollador de software desde mediados de 2010. Apasionado
-              por crear soluciones de software que tengan un impacto en la vida de las personas.
+              {t('About.Line1')}
             </Typography>
           </Grid>
           <Grid item xs={12} md={8}>
             <Typography>
-              He trabajado con equipos de todo el mundo en grandes proyectos y con diferentes roles
-              en el desarrollo web. Además, con algunas participaciones en otras áreas de desarrollo
-              como aplicaciones móviles, aplicaciones de escritorio y WebAssembly. Autodidacta y
-              entusiasta de la Inteligencia Artificial.
+              {t('About.Line2')}
             </Typography>
           </Grid>
         </Grid>
