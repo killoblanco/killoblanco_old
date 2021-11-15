@@ -5,6 +5,8 @@ import AppThemeProvider from '../styles/provider';
 function App() {
   return (
     <StrictMode>
+      <AppThemeProvider>
+      </AppThemeProvider>
     </StrictMode>
   );
 }
