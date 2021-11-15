@@ -1,9 +1,12 @@
 import { Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import Section from '../../components/section';
 import SocialNetworks from '../../components/social-networks';
 import Thumbnail from '../../components/thumbnail';
 
 function Jumbotron() {
+  const { t } = useTranslation();
+
   return (
     <Section
       sx={{
@@ -15,11 +18,11 @@ function Jumbotron() {
       }}
     >
       <Typography variant="h4" align="center" mb={4}>
-        👋🏻 Soy Kamilo Vasquez
+        {t('Jumbotron.Line1')}
       </Typography>
       <Thumbnail />
       <Typography variant="h3" align="center" mt={4}>
-        Desarrollador 🦄
+        {t('Jumbotron.Line2')}
       </Typography>
       <SocialNetworks />
     </Section>
