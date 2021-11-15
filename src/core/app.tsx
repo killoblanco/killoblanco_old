@@ -6,6 +6,7 @@ function App() {
   return (
     <StrictMode>
       <AppThemeProvider>
+        <LandingPage />
       </AppThemeProvider>
     </StrictMode>
   );
