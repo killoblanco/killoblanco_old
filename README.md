@@ -19,6 +19,8 @@ const killoblanco = {
     techStack: {
         frontEnd: [
             'Gatsby',
+            'Mui',
+            'Styled Components',
             'React',
             'Redux',
             'Redux-Saga',
