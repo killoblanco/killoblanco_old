@@ -13,7 +13,11 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          REACT_APP_GA: '${{ secrets.REACT_APP_GA }}'
+          PUBLIC_URL: '${{ secrets.PUBLIC_URL }}'
+          REACT_APP_FIRE_API_K: '${{ secrets.REACT_APP_FIRE_API_K }}'
+          REACT_APP_FIRE_P_ID: '${{ secrets.REACT_APP_FIRE_P_ID }}'
+          REACT_APP_FIRE_APP_ID: '${{ secrets.REACT_APP_FIRE_APP_ID }}'
+          REACT_APP_FIRE_GA: '${{ secrets.REACT_APP_FIRE_GA }}'
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
