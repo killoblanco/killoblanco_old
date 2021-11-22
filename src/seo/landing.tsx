@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
-import { pageview as gaPageView } from 'react-ga';
 import { Helmet } from 'react-helmet';
+import { pageView } from '../core/firebase';
+
 
 function LandingSEO() {
   useEffect(() => {
-    gaPageView(window.location.pathname);
+    pageView(
+      window.location.pathname,
+      'P_Landing',
+    );
   }, []);
 
   return (

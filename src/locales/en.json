@@ -1,8 +1,8 @@
 {
   "TopBar": {},
   "Jumbotron": {
-    "Line1": "👋🏻 I'm Kamilo Vasquez",
-    "Line2": "🦄 Developer",
+    "Line1": "\uD83D\uDC4B\uD83C\uDFFB I'm Kamilo Vasquez",
+    "Line2": "\uD83E\uDD84 Developer",
     "ImgAlt": "I'm Kamilo Vasquez"
   },
   "About": {
@@ -27,5 +27,5 @@
     "Year_one": "{{count}} Year",
     "Year_other": "{{count}} Years"
   },
-  "Footer": "Made with ❤️ & ☕ by"
+  "Footer": "Made with \u2764 & \u2615 by"
 }

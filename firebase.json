@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "build",
+    "site": "killoblanco-119f3",
     "ignore": [
       "firebase.json",
       "**/.*",
