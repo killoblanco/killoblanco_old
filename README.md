@@ -58,4 +58,4 @@ I have worked with teams from all over the world on large projects and with diff
 [github]: https://img.shields.io/github/followers/killoblanco?style=social
 [linkedin]: https://img.shields.io/badge/-Kamilo_Vasquez-blue?style=plastic&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/killoblanco/
 [website]: https://img.shields.io/badge/-Website-blue?style=plastic&logo=MicrosoftEdge&color=3277BC&link=https://whois.kamilo.dev/
-[wave]: ./src/assets/wave.svg
+[wave]: public/assets/wave.svg
