@@ -11,8 +11,7 @@ export default class MyDocument extends Document<CustomDocumentProps> {
       <Html lang="en" className={readexPro.className}>
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="theme-color" content={theme.palette.primary.main} />
+          <meta name="theme-color" content={theme(false).palette.primary.main} />
           <link rel="icon" href="/favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
           {this.props.emotionStyleTags}
