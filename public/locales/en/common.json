@@ -1,0 +1,32 @@
+{
+  "TopBar": {},
+  "Jumbotron": {
+    "Line1": "\uD83D\uDC4B\uD83C\uDFFB I'm",
+    "Line2": "Kamilo Vasquez",
+    "Line3": "\uD83E\uDD84 Web Developer",
+    "ImgAlt": "I'm Kamilo Vasquez"
+  },
+  "About": {
+    "Header": "About Me",
+    "Line1": "Hi, I'm Kamilo Vasquez, a software developer since mid-2010. Passionate about creating software solutions that have an impact on people's lives.",
+    "Line2": "I have worked with teams from all over the world on large projects and with different roles in web development. In addition, with some participation in other areas of development such as mobile applications, desktop applications, and WebAssembly. Self-taught and enthusiastic about Artificial Intelligence."
+  },
+  "Skills": {
+    "Header": "Skills & Technologies",
+    "Card": {
+      "Header": "Software Developer",
+      "Content": "Infrastructure and multiplatform full-stack applications builder with cutting-edge technologies."
+    }
+  },
+  "Experience": {
+    "Header": "Experience",
+    "Front": "Front-End Developer",
+    "Back": "Back-End Developer",
+    "Full": "Full-Stack Developer",
+    "Month_one": "{{count}} Month",
+    "Month_other": "{{count}} Months",
+    "Year_one": "{{count}} Year",
+    "Year_other": "{{count}} Years"
+  },
+  "Footer": "Made with \u2764 & \u2615 by"
+}
