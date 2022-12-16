@@ -1,48 +1,39 @@
-import { Typography } from '@mui/material'
+import { Box, Container, Stack, Typography } from '@mui/material'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { Thumbnail } from '../components/thumbnail'
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale))
+    }
+  }
+}
 
 export default function Home() {
+  const { t } = useTranslation()
   return (
-    <div>
-      <main>
-        <Typography variant="h1">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </Typography>
-
-        <Typography>
-          Get started by editing{' '}
-          <code>pages/index.tsx</code>
-        </Typography>
-
-        <div>
-          <a href="https://nextjs.org/docs">
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn">
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-    </div>
+    <Container maxWidth={false} disableGutters>
+      <Stack
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
+        sx={{ width: '100vw', height: '100vh', overflow: 'hidden' }}
+      >
+        <Thumbnail />
+        <Box>
+          <Typography variant="h3">
+            {t('Jumbotron.Line1')}
+          </Typography>
+          <Typography variant="h1" gutterBottom>
+            {t('Jumbotron.Line2')}
+          </Typography>
+          <Typography variant="h2">
+            {t('Jumbotron.Line3')}
+          </Typography>
+        </Box>
+      </Stack>
+    </Container>
   )
 }
