@@ -1,4 +1,4 @@
-import { Box, styled, Typography } from '@mui/material'
+import { styled, Typography } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
 import { useTranslation } from 'next-i18next'
 import { iconList, StackIcon } from '../stack-icon'
@@ -13,7 +13,7 @@ const Wrapper = styled(Grid2)(({ theme }) => ({
 export const Skills = () => {
   const { t } = useTranslation()
   return (
-    <Wrapper container spacing={0}>
+    <Wrapper component="section" container spacing={0}>
       <Grid2 xs={12} md={6}>
         <Card>
           <Grid2 container spacing={4}>
