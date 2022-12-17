@@ -25,7 +25,7 @@ export const Skills = () => {
           </Grid2>
         </Card>
       </Grid2>
-      <Grid2 xs={12} md={5} mb={8}>
+      <Grid2 xs={12} md={5} my={8}>
         <Typography variant="h2" component="h2" gutterBottom>
           {t('Skills.Header')}
         </Typography>
