@@ -13,7 +13,11 @@ export const theme = (darkMode: boolean) => responsiveFontSizes(
   createTheme({
     palette: paletteColor(darkMode ? 'dark' : 'light'),
     typography: {
-      fontFamily: readexPro.style.fontFamily
+      fontFamily: readexPro.style.fontFamily,
+      fontSize: 16,
+      h1: { fontWeight: 700 },
+      h2: { fontWeight: 600 },
+      h3: { fontWeight: 600 }
     }
   })
 )
