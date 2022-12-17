@@ -14,10 +14,19 @@ const Img = styled('img')(({ theme }) => ({
 export const Thumbnail = () => {
   const { t } = useTranslation()
   return (
-    <Box sx={(t) =>({filter: `drop-shadow(8px 8px 0 ${t.palette.primary.main}) drop-shadow(-8px -8px 0 ${t.palette.primary.main})`})}>
+    <Box
+      sx={(t) =>({
+        filter: `
+          drop-shadow(8px 8px 0 ${t.palette.primary.light})
+          drop-shadow(-8px -8px 0 ${t.palette.primary.light})
+        `,
+        width: 'min-content',
+        margin: '0 auto'
+      })}
+    >
       <Img
         src="https://avatars.githubusercontent.com/u/4205975"
-        alt={t('Jumbotron.ImgAlt')}
+        alt={t('Jumbotron.ImgAlt') || ''}
       />
     </Box>
   )
