@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { Jumbotron } from '../components/sections/jumbotron'
 import { About } from '../components/sections/about'
 import { Skills } from '../components/sections/skills'
+import { Experience } from '../components/sections/experience'
 
 export async function getStaticProps({ locale }: any) {
   return {
@@ -14,10 +15,11 @@ export async function getStaticProps({ locale }: any) {
 
 export default function Home() {
   return (
-    <Container maxWidth="xl" disableGutters>
+    <Container component="main" maxWidth="xl" disableGutters>
       <Jumbotron />
       <About />
       <Skills />
+      <Experience />
     </Container>
   )
 }
