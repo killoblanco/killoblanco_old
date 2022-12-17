@@ -8,10 +8,13 @@ const Wrapper = styled(Grid2)(({theme}) => ({
   justifyContent: 'space-evenly',
   padding: theme.spacing(10, 4),
   color: theme.palette.getContrastText(theme.palette.info.light),
-  border: `solid ${theme.spacing(0.75)} ${theme.palette.divider}`,
-  boxShadow: `${theme.spacing(1.25)} ${theme.spacing(1.25)} 0 0 ${theme.palette.primary.dark}`,
-  borderLeftWidth: 0,
-  borderRightWidth: 0,
+  outline: `solid ${theme.spacing(0.75)} ${theme.palette.divider}`,
+  borderRadius: '10px',
+  boxShadow: `${theme.spacing(2)} ${theme.spacing(2)} 0 0 ${theme.palette.primary.dark}`,
+  [theme.breakpoints.down('xl')]: {
+    borderRadius: 0,
+    boxShadow: `${theme.spacing(1.75)} ${theme.spacing(1.75)} 0 0 ${theme.palette.primary.dark}`,
+  }
 }))
 
 export const About = () => {
