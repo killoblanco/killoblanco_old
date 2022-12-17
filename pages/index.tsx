@@ -14,7 +14,7 @@ export async function getStaticProps({ locale }: any) {
 
 export default function Home() {
   return (
-    <Container maxWidth={false} disableGutters>
+    <Container maxWidth="xl" disableGutters>
       <Jumbotron />
       <About />
       <Skills />
