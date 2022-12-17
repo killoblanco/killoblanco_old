@@ -10,6 +10,7 @@ export const Jumbotron = () => {
   const { t } = useTranslation()
   return (
     <Grid2
+      component="section"
       container
       spacing={0}
       alignItems="center"
