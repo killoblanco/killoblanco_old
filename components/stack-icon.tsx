@@ -6,6 +6,7 @@ import iconFlutter from '../public/assets/stack/flutter.svg'
 import iconGatsby from '../public/assets/stack/gatsby.svg'
 import iconGCloud from '../public/assets/stack/google-cloud.svg'
 import iconGraphql from '../public/assets/stack/graphql.svg'
+import iconMaterialUI from '../public/assets/stack/material-ui.svg'
 import iconNext from '../public/assets/stack/nextjs-icon.svg'
 import iconNode from '../public/assets/stack/nodejs-icon.svg'
 import iconPython from '../public/assets/stack/python.svg'
@@ -24,6 +25,7 @@ interface StackIconProps {
     | 'Gatsby'
     | 'Google_Cloud'
     | 'GraphQL'
+    | 'Material_UI'
     | 'Next'
     | 'Node'
     | 'Python'
@@ -43,6 +45,7 @@ const icons: { [k: string]: string } = {
   Gatsby: iconGatsby,
   Google_Cloud: iconGCloud,
   GraphQL: iconGraphql,
+  Material_UI: iconMaterialUI,
   NextJS: iconNext,
   NodeJS: iconNode,
   Python: iconPython,
