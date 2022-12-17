@@ -5,7 +5,7 @@
 [![LinkedIn]](https://www.linkedin.com/in/killoblanco/) &nbsp;&nbsp;
 [![Website]](https://whois.kamilo.dev/)
 
-## 🦄 Developer
+## 🦄 Web Developer
 
 ```javascript
 const killoblanco = {
@@ -35,8 +35,7 @@ const killoblanco = {
         misc: [
             'Docker',
             'Firebse',
-            'Google Cloud Platform',
-            'WebAssembly',
+            'Google Cloud Platform'
         ],
     },
     currentlyWorkingAs: 'Front-End Developer'
