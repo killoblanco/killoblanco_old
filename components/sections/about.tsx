@@ -18,7 +18,7 @@ export const About = () => {
   const { t } = useTranslation()
   return (
     <Wrapper container spacing={0}>
-      <Grid2 xs={12} md={3}>
+      <Grid2 xs={12} md={3} mb={8}>
         <Typography variant="h1" component="h2">
           {t('About.Header')}
         </Typography>
