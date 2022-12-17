@@ -7,9 +7,11 @@
     "ImgAlt": "Soy Kamilo Vasquez"
   },
   "About": {
-    "Header": "Sobre Mí",
-    "Line1": "Hola, soy Kamilo Vasquez, desarrollador de software desde mediados de 2010. Apasionado por crear soluciones de software que tengan un impacto en la vida de las personas.",
-    "Line2": "He trabajado con equipos de todo el mundo en grandes proyectos y con diferentes roles en el desarrollo web. Además, con algunas participaciones en otras áreas de desarrollo como aplicaciones móviles, aplicaciones de escritorio y WebAssembly. Autodidacta y entusiasta de la Inteligencia Artificial."
+    "Header": "Acerca de mí",
+    "Line1": "Hola, mi nombre es Kamilo Vasquez y soy desarrollador de software con experiencia desde 2010. Me apasiona crear soluciones de software que tengan un impacto positivo en la vida de las personas.",
+    "Line2": "He trabajado en equipos internacionales en proyectos de gran envergadura y he desempeñado diversos roles en desarrollo web. Además, tengo experiencia en otras áreas de desarrollo como aplicaciones móviles y aplicaciones de escritorio. Soy un aprendiz autodidacta y estoy muy interesado en la Inteligencia Artificial.",
+    "Line3": "Actualmente solo estoy disponible para oportunidades de trabajo que requieren reubicación. Busco oportunidades en el extranjero donde pueda aplicar mis habilidades y conocimientos para contribuir al éxito de una empresa. Estoy dispuesto a adaptarme a nuevas culturas y desafíos laborales.",
+    "Line4": "Si está buscando un profesional altamente calificado y motivado para unirse a su equipo, no dude en contactarme. Espero con interés la oportunidad de hablar con usted y discutir cómo puedo ayudar a su empresa a alcanzar sus objetivos."
   },
   "Skills": {
     "Header": "Habilidades & Tecnologías",
