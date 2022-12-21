@@ -3,7 +3,7 @@ import { IconButton, Menu, MenuItem } from '@mui/material'
 import { SyntheticEvent, useState } from 'react'
 import i18n from '../locales'
 
-function LngMenu() {
+export const LngMenu = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
   const openMenu = ({ currentTarget }: SyntheticEvent<HTMLButtonElement>) => {
@@ -37,5 +37,3 @@ function LngMenu() {
     </>
   )
 }
-
-export default LngMenu
