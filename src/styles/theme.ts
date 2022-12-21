@@ -7,6 +7,15 @@ import { paletteColor } from './palette'
 
 export const theme = (darkMode: boolean) => responsiveFontSizes(
   createTheme({
+    components: {
+      MuiAppBar: {
+        styleOverrides: {
+          root: {
+            backgroundColor: 'transparent',
+          }
+        }
+      }
+    },
     palette: paletteColor(darkMode ? 'dark' : 'light'),
     typography: {
       fontFamily: 'Readex Pro, sans-serif',
