@@ -1,18 +1,15 @@
 import { AppBar, Box, Stack, Toolbar } from '@mui/material'
-import LngMenu from './lng-menu'
+import { LngMenu } from './lng-menu'
+import { ThemeToggle } from './theme-toggle'
 
-function TopBar() {
-
-  return (
-    <AppBar position="fixed" elevation={false}>
-      <Toolbar>
-        <Box sx={{ flexGrow: 1 }} />
-        <Stack component="nav" direction="row" spacing={2}>
-          <LngMenu />
-        </Stack>
-      </Toolbar>
-    </AppBar>
-  )
-}
-
-export default TopBar
+export const TopBar = () => (
+  <AppBar position="fixed" elevation={0}>
+    <Toolbar>
+      <Box sx={{ flexGrow: 1 }} />
+      <Stack component="nav" direction="row" spacing={1}>
+        <ThemeToggle />
+        <LngMenu />
+      </Stack>
+    </Toolbar>
+  </AppBar>
+)
