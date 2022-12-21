@@ -5,7 +5,7 @@ import { LandingPage } from './pages/landing'
 import i18n from './locales'
 import { I18nextProvider } from 'react-i18next'
 import { StylesProvider } from './styles/provider'
-import TopBar from './components/top-bar'
+import { TopBar } from './components/top-bar'
 
 export const Core = () => {
   return (
