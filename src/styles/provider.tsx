@@ -8,14 +8,14 @@ export const darkModeAtom = atom({
   default: false
 })
 
-export const useDarkModeToggle = (): () => void => {
+export const useDarkModeToggle = (): [boolean, () => void] => {
   const [darkMode, setDarkMode] = useRecoilState(darkModeAtom)
 
-  return () => {
+  return [darkMode, () => {
     setDarkMode(!darkMode)
-  }
+  }]
 }
-export const StylesProvider = ({children}: PropsWithChildren) => {
+export const StylesProvider = ({ children }: PropsWithChildren) => {
   const darkMode = useRecoilValue(darkModeAtom)
   const setDarkMode = useSetRecoilState(darkModeAtom)
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
