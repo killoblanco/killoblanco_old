@@ -1,7 +1,8 @@
 import { IconButton, Stack } from '@mui/material'
 import { Icon } from '@iconify/react'
+import React from 'react'
 
-export const SocialNetworks = () => (
+export const SocialNetworks = (): JSX.Element => (
   <Stack direction="row" spacing={8} mt={4}>
     <IconButton
       component="a"
