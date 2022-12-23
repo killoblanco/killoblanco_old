@@ -1,20 +1,20 @@
 import { Icon } from '@iconify/react'
 import { IconButton, Menu, MenuItem } from '@mui/material'
-import { SyntheticEvent, useState } from 'react'
+import React, { SyntheticEvent, useState } from 'react'
 import i18n from '../locales'
 
-export const LngMenu = () => {
+export const LngMenu = (): JSX.Element => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
-  const openMenu = ({ currentTarget }: SyntheticEvent<HTMLButtonElement>) => {
+  const openMenu = ({ currentTarget }: SyntheticEvent<HTMLButtonElement>): void => {
     setAnchorEl(currentTarget)
   }
 
-  const closeMenu = () => {
+  const closeMenu = (): void => {
     setAnchorEl(null)
   }
 
-  const setLng = (lng: string) => {
+  const setLng = (lng: string): void => {
     void i18n.changeLanguage(lng)
     closeMenu()
   }
@@ -26,7 +26,7 @@ export const LngMenu = () => {
       </IconButton>
       <Menu
         anchorEl={anchorEl}
-        open={!!anchorEl}
+        open={!(anchorEl == null)}
         onClose={closeMenu}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
         transformOrigin={{ vertical: 'top', horizontal: 'center' }}
