@@ -1,17 +1,17 @@
-import "@fontsource/readex-pro/400.css"
-import "@fontsource/readex-pro/500.css"
-import "@fontsource/readex-pro/600.css"
-import "@fontsource/readex-pro/700.css"
-import { createTheme, responsiveFontSizes } from '@mui/material'
+import '@fontsource/readex-pro/400.css'
+import '@fontsource/readex-pro/500.css'
+import '@fontsource/readex-pro/600.css'
+import '@fontsource/readex-pro/700.css'
+import { createTheme, responsiveFontSizes, Theme } from '@mui/material'
 import { paletteColor } from './palette'
 
-export const theme = (darkMode: boolean) => responsiveFontSizes(
+export const theme = (darkMode: boolean): Theme => responsiveFontSizes(
   createTheme({
     components: {
       MuiAppBar: {
         styleOverrides: {
           root: {
-            backgroundColor: 'transparent',
+            backgroundColor: 'transparent'
           }
         }
       }
