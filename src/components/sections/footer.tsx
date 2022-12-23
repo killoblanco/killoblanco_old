@@ -1,5 +1,6 @@
 import { Link, styled, Typography } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 const Wrapper = styled(Grid2)(({ theme }) => ({
@@ -13,8 +14,8 @@ const Wrapper = styled(Grid2)(({ theme }) => ({
   boxShadow: `${theme.spacing(2)} ${theme.spacing(2)} 0 0 ${theme.palette.primary.dark}`,
   [theme.breakpoints.down('xl')]: {
     borderRadius: 0,
-    boxShadow: `${theme.spacing(1.75)} ${theme.spacing(1.75)} 0 0 ${theme.palette.primary.dark}`,
-  },
+    boxShadow: `${theme.spacing(1.75)} ${theme.spacing(1.75)} 0 0 ${theme.palette.primary.dark}`
+  }
 }))
 
 const StyledLink = styled(Link)(({ theme }) => ({
@@ -23,11 +24,11 @@ const StyledLink = styled(Link)(({ theme }) => ({
   textDecorationColor: 'inherit',
   textUnderlineOffset: theme.spacing(0.75),
   '&:hover': {
-    textDecorationStyle: 'dashed',
-  },
+    textDecorationStyle: 'dashed'
+  }
 }))
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
   const { t } = useTranslation()
   return (
     <Grid2 component="section" container spacing={0} justifyContent="center">
