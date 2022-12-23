@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next'
 import {
   Timeline,
   TimelineConnector,
@@ -8,10 +7,12 @@ import {
   TimelineOppositeContent,
   TimelineSeparator
 } from '@mui/lab'
-import { Dates } from './dates'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Company } from './company'
+import { Dates } from './dates'
 
-export const List = () => {
+export const List = (): JSX.Element => {
   const { t } = useTranslation()
 
   const timeline = {
@@ -33,7 +34,7 @@ export const List = () => {
     <Timeline>
       {Object.entries(timeline).map(([date, company], idx) => (
         <TimelineItem key={company}>
-          <TimelineOppositeContent sx={{pt:0, pb:4, pl:0}}>
+          <TimelineOppositeContent sx={{ pt: 0, pb: 4, pl: 0 }}>
             <Dates date={date} />
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -44,7 +45,7 @@ export const List = () => {
               />
             )}
           </TimelineSeparator>
-          <TimelineContent sx={{pt:0, pb:4, pr:0}}>
+          <TimelineContent sx={{ pt: 0, pb: 4, pr: 0 }}>
             <Company company={company} />
           </TimelineContent>
         </TimelineItem>
