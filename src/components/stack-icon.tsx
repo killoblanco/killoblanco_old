@@ -1,4 +1,5 @@
 import { Box, styled, Typography } from '@mui/material'
+import React from 'react'
 import iconDjango from '../assets/stack/django-icon.svg'
 import iconDocker from '../assets/stack/docker-icon.svg'
 import iconFirebase from '../assets/stack/firebase.svg'
@@ -22,29 +23,29 @@ import iconPlaywright from '../assets/stack/playwright.svg'
 
 interface StackIconProps {
   name: 'Django'
-    | 'Docker'
-    | 'Firebase'
-    | 'Flutter'
-    | 'Gatsby'
-    | 'Google_Cloud'
-    | 'GraphQL'
-    | 'Material_UI'
-    | 'Next'
-    | 'Node'
-    | 'Python'
-    | 'React'
-    | 'Recoil'
-    | 'Redux'
-    | 'Redux_Saga'
-    | 'TypeScript'
-    | 'ESLint'
-    | 'Vitejs'
-    | 'Vitest'
-    | 'Playwright'
-    | string;
+  | 'Docker'
+  | 'Firebase'
+  | 'Flutter'
+  | 'Gatsby'
+  | 'Google_Cloud'
+  | 'GraphQL'
+  | 'Material_UI'
+  | 'Next'
+  | 'Node'
+  | 'Python'
+  | 'React'
+  | 'Recoil'
+  | 'Redux'
+  | 'Redux_Saga'
+  | 'TypeScript'
+  | 'ESLint'
+  | 'Vitejs'
+  | 'Vitest'
+  | 'Playwright'
+  | string
 }
 
-const icons: { [k: string]: string } = {
+const icons: Record<string, string> = {
   Django: iconDjango,
   Docker: iconDocker,
   ESLint: iconESLint,
@@ -74,7 +75,7 @@ const Img = styled('img')(({ theme }) => ({
   width: theme.spacing(6)
 }))
 
-export function StackIcon({ name }: StackIconProps) {
+export function StackIcon ({ name }: StackIconProps): JSX.Element {
   return (
     <Box
       sx={{
