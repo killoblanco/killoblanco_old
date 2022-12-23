@@ -2,7 +2,7 @@ import { ThemeOptions } from '@mui/material'
 import { hexFromArgb, argbFromHex, themeFromSourceColor, Scheme } from '@material/material-color-utilities'
 
 const { schemes, palettes } = themeFromSourceColor(argbFromHex('#C7F598'))
-const getColorHex = (mode: 'light' | 'dark') => (color: keyof Scheme) => hexFromArgb(<number>schemes[mode][color])
+const getColorHex = (mode: 'light' | 'dark') => (color: keyof Scheme) => hexFromArgb(schemes[mode][color] as number)
 
 export const paletteColor = (mode: 'light' | 'dark'): Partial<ThemeOptions['palette']> => ({
   mode,
