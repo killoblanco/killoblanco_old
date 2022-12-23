@@ -4,7 +4,7 @@ import enLang from './en.json'
 import esLang from './es.json'
 import { initReactI18next } from 'react-i18next'
 
-i18n
+void i18n
   .use(initReactI18next)
   .use(LanguageDetector)
   .init({
