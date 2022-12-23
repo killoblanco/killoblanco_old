@@ -1,8 +1,8 @@
-import { Icon } from '@iconify/react'
+import React, { Icon } from '@iconify/react'
 import { IconButton } from '@mui/material'
 import { useDarkModeToggle } from '../styles/provider'
 
-export const ThemeToggle = () => {
+export const ThemeToggle = (): JSX.Element => {
   const [darkMode, toggleDarkMode] = useDarkModeToggle()
 
   return (
