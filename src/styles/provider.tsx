@@ -1,4 +1,4 @@
-import { PropsWithChildren, useEffect } from 'react'
+import React, { PropsWithChildren, useEffect } from 'react'
 import { CssBaseline, ThemeProvider, useMediaQuery } from '@mui/material'
 import { theme } from './theme'
 import { atom, useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil'
@@ -15,7 +15,7 @@ export const useDarkModeToggle = (): [boolean, () => void] => {
     setDarkMode(!darkMode)
   }]
 }
-export const StylesProvider = ({ children }: PropsWithChildren) => {
+export const StylesProvider = ({ children }: PropsWithChildren): JSX.Element => {
   const darkMode = useRecoilValue(darkModeAtom)
   const setDarkMode = useSetRecoilState(darkModeAtom)
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
