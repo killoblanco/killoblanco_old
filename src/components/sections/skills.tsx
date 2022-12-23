@@ -3,6 +3,7 @@ import Grid2 from '@mui/material/Unstable_Grid2'
 import { iconList, StackIcon } from '../stack-icon'
 import { Card } from '../card'
 import { useTranslation } from 'react-i18next'
+import React from 'react'
 
 const Wrapper = styled(Grid2)(({ theme }) => ({
   alignItems: 'center',
@@ -10,7 +11,7 @@ const Wrapper = styled(Grid2)(({ theme }) => ({
   padding: theme.spacing(10, 4)
 }))
 
-export const Skills = () => {
+export const Skills = (): JSX.Element => {
   const { t } = useTranslation()
   return (
     <Wrapper component="section" container spacing={0}>
