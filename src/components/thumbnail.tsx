@@ -1,6 +1,7 @@
 import { Box, styled } from '@mui/material'
-import starMask from '../assets/star.svg'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
+import starMask from '../assets/star.svg'
 
 const Img = styled('img')(({ theme }) => ({
   width: `clamp(${theme.spacing(32)}, 50vw, ${theme.spacing(64)})`,
@@ -11,7 +12,7 @@ const Img = styled('img')(({ theme }) => ({
   maskPosition: 'center'
 }))
 
-export const Thumbnail = () => {
+export const Thumbnail = (): JSX.Element => {
   const { t } = useTranslation()
   return (
     <Box
@@ -26,7 +27,7 @@ export const Thumbnail = () => {
     >
       <Img
         src="https://avatars.githubusercontent.com/u/4205975"
-        alt={t('Jumbotron.ImgAlt') || ''}
+        alt={t('Jumbotron.ImgAlt') ?? ''}
       />
     </Box>
   )
