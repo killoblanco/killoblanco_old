@@ -1,8 +1,9 @@
 import Grid2 from '@mui/material/Unstable_Grid2'
 import { styled, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
+import React from 'react'
 
-const Wrapper = styled(Grid2)(({theme}) => ({
+const Wrapper = styled(Grid2)(({ theme }) => ({
   backgroundColor: theme.palette.info.light,
   alignItems: 'flex-end',
   justifyContent: 'space-evenly',
@@ -13,11 +14,11 @@ const Wrapper = styled(Grid2)(({theme}) => ({
   boxShadow: `${theme.spacing(2)} ${theme.spacing(2)} 0 0 ${theme.palette.primary.dark}`,
   [theme.breakpoints.down('xl')]: {
     borderRadius: 0,
-    boxShadow: `${theme.spacing(1.75)} ${theme.spacing(1.75)} 0 0 ${theme.palette.primary.dark}`,
+    boxShadow: `${theme.spacing(1.75)} ${theme.spacing(1.75)} 0 0 ${theme.palette.primary.dark}`
   }
 }))
 
-export const About = () => {
+export const About = (): JSX.Element => {
   const { t } = useTranslation()
   return (
     <Wrapper component="section" container spacing={0}>
