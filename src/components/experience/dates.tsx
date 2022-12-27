@@ -10,9 +10,9 @@ export const Dates = ({ date }: { date: string }): JSX.Element => {
   const [start, end] = date.split('_')
 
   const parseDate = (date: string | undefined): string => {
-    let nextDate = DateTime.local({ locale }).toFormat(DATE_FORMAT)
-    if (date != null) {
-      nextDate = DateTime.fromISO(date, { locale }).toFormat(DATE_FORMAT)
+    let nextDate = DateTime.now().toFormat(DATE_FORMAT, { locale })
+    if (date !== '') {
+      nextDate = DateTime.fromISO(date ?? '', { locale }).toFormat(DATE_FORMAT)
     }
     return nextDate[0].toUpperCase() + nextDate.slice(1)
   }
@@ -26,7 +26,7 @@ export const Dates = ({ date }: { date: string }): JSX.Element => {
     ).toObject()
     const nextMonths = +(months ?? 0).toFixed(0)
 
-    if (years != null) {
+    if (years != null && years > 0) {
       return `${t('Experience.Year', { count: years })} ${t('Experience.Month', { count: nextMonths })}`
     }
     return `${t('Experience.Month', { count: nextMonths })}`
