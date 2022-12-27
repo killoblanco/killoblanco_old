@@ -10,10 +10,9 @@ const Wrapper = styled(Grid2)(({ theme }) => ({
   padding: theme.spacing(5, 4),
   color: theme.palette.getContrastText(theme.palette.info.light),
   outline: `solid ${theme.spacing(0.75)} ${theme.palette.divider}`,
-  borderRadius: '10px',
+  borderRadius: theme.spacing(1.25, 1.25, 0, 0),
   boxShadow: `${theme.spacing(2)} ${theme.spacing(2)} 0 0 ${theme.palette.primary.dark}`,
   [theme.breakpoints.down('xl')]: {
-    borderRadius: 0,
     boxShadow: `${theme.spacing(1.75)} ${theme.spacing(1.75)} 0 0 ${theme.palette.primary.dark}`
   }
 }))
