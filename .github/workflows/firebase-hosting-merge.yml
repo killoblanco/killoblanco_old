@@ -1,0 +1,24 @@
+name: Deploy to Firebase Hosting on merge
+'on':
+  push:
+    branches:
+      - main
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run build
+        env:
+          VITE_FIRE_API_KEY: '${{ secrets.VITE_FIRE_API_KEY }}'
+          VITE_FIRE_PROJECT_ID: '${{ secrets.VITE_FIRE_PROJECT_ID }}'
+          VITE_FIRE_APP_ID: '${{ secrets.VITE_FIRE_APP_ID }}'
+          VITE_FIRE_GA: '${{ secrets.VITE_FIRE_GA }}'
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KILLOBLANCO_119F3 }}'
+          channelId: live
+          projectId: killoblanco-119f3
