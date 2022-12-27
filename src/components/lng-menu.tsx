@@ -1,32 +1,32 @@
-import { Language } from '@mui/icons-material';
-import { IconButton, Menu, MenuItem } from '@mui/material';
-import { useState } from 'react';
-import i18n from '../locales';
+import { Icon } from '@iconify/react'
+import { IconButton, Menu, MenuItem } from '@mui/material'
+import React, { SyntheticEvent, useState } from 'react'
+import i18n from '../locales'
 
-function LngMenu() {
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+export const LngMenu = (): JSX.Element => {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
-  const openMenu = ({ currentTarget }: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(currentTarget);
-  };
+  const openMenu = ({ currentTarget }: SyntheticEvent<HTMLButtonElement>): void => {
+    setAnchorEl(currentTarget)
+  }
 
-  const closeMenu = () => {
-    setAnchorEl(null);
-  };
+  const closeMenu = (): void => {
+    setAnchorEl(null)
+  }
 
-  const setLng = (lng: string) => {
-    i18n.changeLanguage(lng);
-    closeMenu();
-  };
+  const setLng = (lng: string): void => {
+    void i18n.changeLanguage(lng)
+    closeMenu()
+  }
 
   return (
     <>
       <IconButton onClick={openMenu}>
-        <Language />
+        <Icon icon="tabler:language" />
       </IconButton>
       <Menu
         anchorEl={anchorEl}
-        open={!!anchorEl}
+        open={!(anchorEl == null)}
         onClose={closeMenu}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
         transformOrigin={{ vertical: 'top', horizontal: 'center' }}
@@ -35,7 +35,5 @@ function LngMenu() {
         <MenuItem onClick={() => setLng('en')}>English</MenuItem>
       </Menu>
     </>
-  );
+  )
 }
-
-export default LngMenu;

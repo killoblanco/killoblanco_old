@@ -1,6 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/webstorm+all,node,react,firebase
-# Edit at https://www.toptal.com/developers/gitignore?templates=webstorm+all,node,react,firebase
+# Created by https://www.toptal.com/developers/gitignore/api/node,react,firebase,webstorm+all
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,react,firebase,webstorm+all
 
 ### Firebase ###
 .idea
@@ -68,6 +67,9 @@ web_modules/
 # Optional eslint cache
 .eslintcache
 
+# Optional stylelint cache
+.stylelintcache
+
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -83,10 +85,12 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
+# dotenv environment variable files
 .env
-.env.test
-.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -108,6 +112,12 @@ dist
 
 # vuepress build output
 .vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+
+# Docusaurus cache and generated files
+.docusaurus
 
 # Serverless directories
 .serverless/
@@ -136,7 +146,6 @@ dist
 .webpack/
 
 # Optional stylelint cache
-.stylelintcache
 
 # SvelteKit build / generate output
 .svelte-kit
@@ -145,7 +154,6 @@ dist
 .DS_*
 **/*.backup.*
 **/*.back.*
-build
 
 node_modules
 
@@ -219,6 +227,9 @@ atlassian-ide-plugin.xml
 # Cursive Clojure plugin
 .idea/replstate.xml
 
+# SonarLint plugin
+.idea/sonarlint/
+
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
@@ -232,19 +243,12 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 ### WebStorm+all Patch ###
-# Ignores the whole .idea folder and all .iml files
-# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
+# Ignore everything but code style settings and run configurations
+# that are supposed to be shared within teams.
 
-.idea/
+.idea/*
 
-# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+!.idea/codeStyles
+!.idea/runConfigurations
 
-*.iml
-modules.xml
-.idea/misc.xml
-*.ipr
-
-# Sonarlint plugin
-.idea/sonarlint
-
-# End of https://www.toptal.com/developers/gitignore/api/webstorm+all,node,react,firebase
+# End of https://www.toptal.com/developers/gitignore/api/node,react,firebase,webstorm+all

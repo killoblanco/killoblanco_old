@@ -1,17 +1,16 @@
-import { Typography } from '@mui/material';
+import { Typography } from '@mui/material'
+import React from 'react'
 
-function ExperienceCompany({ company }: { company: string }) {
-  const [name, role] = company.split('_');
+export const Company = ({ company }: { company: string }): JSX.Element => {
+  const [name, role] = company.split('_')
   return (
     <>
-      <Typography variant="h6">
+      <Typography variant="h5" component="p">
         {name}
       </Typography>
-      <Typography variant="subtitle1">
+      <Typography variant="subtitle1" component="p">
         {role}
       </Typography>
     </>
-  );
+  )
 }
-
-export default ExperienceCompany;

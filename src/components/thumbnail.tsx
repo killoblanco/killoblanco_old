@@ -1,35 +1,34 @@
-import { keyframes, styled } from '@mui/material';
-import { useTranslation } from 'react-i18next';
-
-const bounce = keyframes({
-  'from': { transform: 'translateY(-12px)' },
-  'to': { transform: 'translateY(12px)' },
-});
-
-const animation = `
-  ${bounce}
-  1.6s
-  ease-in-out
-  infinite
-  alternate
-`;
+import { Box, styled } from '@mui/material'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import starMask from '../assets/star.svg'
 
 const Img = styled('img')(({ theme }) => ({
-  width: theme.spacing(32),
+  width: `clamp(${theme.spacing(32)}, 50vw, ${theme.spacing(64)})`,
   aspectRatio: '1 / 1',
-  borderRadius: '50%',
-  boxShadow: theme.shadows[12],
-  animation,
-}));
+  maskImage: `url(${starMask})`,
+  maskSize: 'contain',
+  maskRepeat: 'no-repeat',
+  maskPosition: 'center'
+}))
 
-function Thumbnail() {
-  const { t } = useTranslation();
+export const Thumbnail = (): JSX.Element => {
+  const { t } = useTranslation()
   return (
-    <Img
-      src="https://avatars.githubusercontent.com/u/4205975"
-      alt={t('Jumbotron.ImgAlt')}
-    />
-  );
+    <Box
+      sx={(t) => ({
+        filter: `
+          drop-shadow(8px 8px 0 ${t.palette.primary.light})
+          drop-shadow(-8px -8px 0 ${t.palette.primary.light})
+        `,
+        width: 'min-content',
+        margin: '0 auto'
+      })}
+    >
+      <Img
+        src="https://avatars.githubusercontent.com/u/4205975"
+        alt={t('Jumbotron.ImgAlt') ?? ''}
+      />
+    </Box>
+  )
 }
-
-export default Thumbnail;

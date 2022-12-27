@@ -12,10 +12,10 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          REACT_APP_FIRE_API_K: '${{ secrets.REACT_APP_FIRE_API_K }}'
-          REACT_APP_FIRE_P_ID: '${{ secrets.REACT_APP_FIRE_P_ID }}'
-          REACT_APP_FIRE_APP_ID: '${{ secrets.REACT_APP_FIRE_APP_ID }}'
-          REACT_APP_FIRE_GA: '${{ secrets.REACT_APP_FIRE_GA }}'
+          VITE_FIRE_API_KEY: '${{ secrets.VITE_FIRE_API_KEY }}'
+          VITE_FIRE_PROJECT_ID: '${{ secrets.VITE_FIRE_PROJECT_ID }}'
+          VITE_FIRE_APP_ID: '${{ secrets.VITE_FIRE_APP_ID }}'
+          VITE_FIRE_GA: '${{ secrets.VITE_FIRE_GA }}'
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'

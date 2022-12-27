@@ -1,54 +1,49 @@
 {
-  "name": "web",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://whois.kamilo.dev",
-  "dependencies": {
-    "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
-    "@mui/icons-material": "^5.1.0",
-    "@mui/lab": "^5.0.0-alpha.54",
-    "@mui/material": "^5.1.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.20.37",
-    "@types/react": "^16.14.20",
-    "@types/react-dom": "^16.9.14",
-    "firebase": "^9.5.0",
-    "i18next": "^21.4.2",
-    "i18next-browser-languagedetector": "^6.1.2",
-    "moment": "^2.29.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-i18next": "^11.14.2",
-    "react-scripts": "4.0.3",
-    "typescript": "~4.1.5"
-  },
+  "name": "killoblanco",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "deploy:int": "firebase hosting:channel:deploy int",
+    "deploy:prod": "npm run lint & firebase deploy --only hosting"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "@fontsource/readex-pro": "4.5.11",
+    "@material/material-color-utilities": "0.2.0",
+    "@mui/lab": "5.0.0-alpha.113",
+    "@mui/material": "5.11.1",
+    "firebase": "9.15.0",
+    "i18next": "22.4.6",
+    "i18next-browser-languagedetector": "7.0.1",
+    "luxon": "3.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-helmet": "6.1.0",
+    "react-i18next": "12.1.1",
+    "recoil": "0.7.6"
   },
   "devDependencies": {
-    "@types/react-helmet": "^6.1.4"
+    "@iconify/react": "4.0.1",
+    "@types/luxon": "3.1.0",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "@types/react-helmet": "6.1.6",
+    "@typescript-eslint/eslint-plugin": "5.47.0",
+    "@vitejs/plugin-react-swc": "3.0.0",
+    "eslint": "8.30.0",
+    "eslint-config-standard-with-typescript": "24.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.31.11",
+    "typescript": "4.9.3",
+    "vite": "4.0.0"
   }
 }
