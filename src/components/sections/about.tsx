@@ -1,9 +1,9 @@
-import Grid2 from '@mui/material/Unstable_Grid2'
+import Grid2, { Grid2Props } from '@mui/material/Unstable_Grid2'
 import { styled, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import React from 'react'
 
-const Wrapper = styled(Grid2)(({ theme }) => ({
+const Wrapper = styled(Grid2)<Grid2Props>(({ theme }) => ({
   backgroundColor: theme.palette.info.light,
   alignItems: 'flex-end',
   justifyContent: 'space-evenly',
