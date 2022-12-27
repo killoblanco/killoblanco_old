@@ -1,4 +1,5 @@
-import React, { Icon } from '@iconify/react'
+import React from 'react'
+import { Icon } from '@iconify/react'
 import { IconButton } from '@mui/material'
 import { useDarkModeToggle } from '../styles/provider'
 
