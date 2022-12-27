@@ -1,11 +1,11 @@
 import { styled, Typography } from '@mui/material'
-import Grid2 from '@mui/material/Unstable_Grid2'
+import Grid2, { Grid2Props } from '@mui/material/Unstable_Grid2'
 import { iconList, StackIcon } from '../stack-icon'
 import { Card } from '../card'
 import { useTranslation } from 'react-i18next'
 import React from 'react'
 
-const Wrapper = styled(Grid2)(({ theme }) => ({
+const Wrapper = styled(Grid2)<Grid2Props>(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'space-evenly',
   padding: theme.spacing(10, 4)
