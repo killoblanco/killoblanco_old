@@ -1,10 +1,10 @@
 import { styled, Typography } from '@mui/material'
-import Grid2 from '@mui/material/Unstable_Grid2'
+import Grid2, { Grid2Props } from '@mui/material/Unstable_Grid2'
 import { List } from '../experience/list'
 import { useTranslation } from 'react-i18next'
 import React from 'react'
 
-const Wrapper = styled(Grid2)(({ theme }) => ({
+const Wrapper = styled(Grid2)<Grid2Props>(({ theme }) => ({
   alignItems: 'flex-star',
   justifyContent: 'space-evenly',
   padding: theme.spacing(10, 6),
