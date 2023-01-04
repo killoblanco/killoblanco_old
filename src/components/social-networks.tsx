@@ -22,5 +22,14 @@ export const SocialNetworks = (): JSX.Element => (
     >
       <Icon icon="tabler:brand-linkedin" width={56} height={56} />
     </IconButton>
+    <IconButton
+      component="a"
+      href="https://www.paypal.com/donate/?hosted_button_id=XPHPMQWVW2SWA"
+      target="_donate"
+      size="large"
+      color="secondary"
+    >
+      <Icon icon="tabler:brand-paypal" width={56} height={56} />
+    </IconButton>
   </Stack>
 )
